@@ -6,35 +6,46 @@ import com.google.gson.annotations.SerializedName;
 public class DataIndo {
     @SerializedName("positif")
     @Expose
-    private Integer positif;
+    private String positif;
     @SerializedName("sembuh")
     @Expose
-    private Integer sembuh;
+    private String sembuh;
     @SerializedName("meninggal")
     @Expose
-    private Integer meninggal;
+    private String meninggal;
+    @SerializedName("dirawat")
+    @Expose
+    private String dirawat;
 
-    public Integer getPositif() {
+    public String getDirawat() {
+        return dirawat;
+    }
+
+    public void setDirawat(String dirawat) {
+        this.dirawat = dirawat;
+    }
+
+    public String getPositif() {
         return positif;
     }
 
-    public Integer getSembuh() {
-        return sembuh;
-    }
-
-    public Integer getMeninggal() {
-        return meninggal;
-    }
-
-    public void setPositif(Integer positif) {
+    public void setPositif(String positif) {
         this.positif = positif;
     }
 
-    public void setSembuh(Integer sembuh) {
+    public String getSembuh() {
+        return sembuh;
+    }
+
+    public void setSembuh(String sembuh) {
         this.sembuh = sembuh;
     }
 
-    public void setMeninggal(Integer meninggal) {
+    public String getMeninggal() {
+        return meninggal;
+    }
+
+    public void setMeninggal(String meninggal) {
         this.meninggal = meninggal;
     }
 }
